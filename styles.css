@@ -117,11 +117,12 @@ ul { list-style: none; }
 /* ========== HERO ========== */
 .hero {
   position: relative;
+  width: 100%;
   height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 120px 60px;
+  padding: 0 calc((100% - 1440px) / 2 + 120px) 60px;
   gap: 12px;
   background:
     linear-gradient(to top, #0D0B1A 10%, #0D0B1ACC 30%, #0D0B1A00 60%, #0D0B1A00 100%),
@@ -598,9 +599,14 @@ ul { list-style: none; }
   color: var(--accent-pink);
   text-transform: uppercase;
 }
+.refs-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .refs-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 14px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 1px;
   color: var(--accent-aqua);
@@ -613,12 +619,25 @@ ul { list-style: none; }
 .ref-card {
   flex: 1;
   min-width: 0;
+  height: 240px;
   background: var(--bg-card);
   border-left: 4px solid var(--accent-pink);
   padding: 24px 32px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 12px;
+}
+.ref-card__author-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ref-card__logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  object-fit: cover;
 }
 .ref-card__quote {
   font-family: 'IBM Plex Mono', monospace;
@@ -748,7 +767,7 @@ ul { list-style: none; }
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1200px) {
   .nav { padding: 0 30px; }
-  .hero { padding: 0 60px 60px; }
+  .hero { padding: 0 60px 60px !important; }
   .hero__name { font-size: 52px; }
   .section { padding: 60px 40px; }
   .skills-grid { flex-wrap: wrap; }

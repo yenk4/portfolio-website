@@ -30,20 +30,20 @@
   </div>
 </nav>
 
-<div class="page">
+<!-- HERO -->
+<section class="hero" id="hero">
+  <p class="hero__quote">YOU LOOK LONELY.. I CAN FIX THAT</p>
+  <h1 class="hero__name">YANA MAKOVSKAYA</h1>
+  <p class="hero__title">SENIOR ML / AI ENGINEER</p>
+  <p class="hero__sub">GENERATIVE AI &nbsp;// &nbsp;IMAGE &amp; VIDEO GENERATION &nbsp;// &nbsp;COMPUTER VISION &nbsp;// &nbsp;MLOPS &nbsp;// &nbsp;TRAINING MODELS</p>
+  <div class="hero__stats">
+    <span class="hero__stat">[5 YRS EXP]</span>
+    <span class="hero__stat">[2M+ MEDIA PROCESSED]</span>
+    <span class="hero__stat">[90%+ ACCURACY]</span>
+  </div>
+</section>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <p class="hero__quote">YOU LOOK LONELY.. I CAN FIX THAT</p>
-    <h1 class="hero__name">YANA MAKOVSKAYA</h1>
-    <p class="hero__title">SENIOR ML / AI ENGINEER</p>
-    <p class="hero__sub">GENERATIVE AI &nbsp;// &nbsp;IMAGE &amp; VIDEO GENERATION &nbsp;// &nbsp;COMPUTER VISION &nbsp;// &nbsp;MLOPS &nbsp;// &nbsp;TRAINING MODELS</p>
-    <div class="hero__stats">
-      <span class="hero__stat">[5 YRS EXP]</span>
-      <span class="hero__stat">[2M+ MEDIA PROCESSED]</span>
-      <span class="hero__stat">[90%+ ACCURACY]</span>
-    </div>
-  </section>
+<div class="page">
 
   <!-- FLUX SHOWCASE -->
   <section class="section" id="flux">
@@ -134,18 +134,18 @@
     <div class="lora-row">
       <img src="media/converted/sdxl/3_1.jpg" alt="Without LoRA 3" class="border-aqua" loading="lazy">
       <img src="media/converted/sdxl/3_2.jpg" alt="With LoRA 3" class="border-pink" loading="lazy">
-      <div class="locked-card">
+      <a href="#contact" class="locked-card">
         <img src="media/converted/nsfw_blurred/thumb_1.jpg" alt="" class="locked-card__bg">
         <div class="locked-card__overlay"></div>
         <svg class="locked-card__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
         <span class="locked-card__text">CONTACT ME</span>
-      </div>
-      <div class="locked-card">
+      </a>
+      <a href="#contact" class="locked-card">
         <img src="media/converted/nsfw_blurred/thumb_2.jpg" alt="" class="locked-card__bg">
         <div class="locked-card__overlay"></div>
         <svg class="locked-card__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
         <span class="locked-card__text">FOR NSFW</span>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -303,15 +303,23 @@ I also received additional psychology education as a hobby. This turned out to b
         <p class="bio-card__tldr">TL;DR: GREW UP MAKING SIMS CHARACTERS, BECAME ML ENGINEER, NOW I MAKE AI ONES. I THRIVE IN FAST-MOVING ENVIRONMENTS, ALWAYS READY TO SOLVE REAL-LIFE PROBLEMS EFFECTIVELY. CHECK OUT MY RESUME TO FIND OUT MORE</p>
       </div>
     </div>
-    <span class="refs-label">[REFERENCES]</span>
-    <div class="refs-row">
-      <div class="ref-card">
-        <p class="ref-card__quote">"YANA IS A STRONG DATA SCIENCE ENGINEER WHO COMBINES SOLID TECHNICAL SKILLS WITH A PRACTICAL, PRODUCT-ORIENTED MINDSET. SHE DELIVERS RELIABLE RESULTS, COMMUNICATES CLEARLY, AND IS GREAT TO WORK WITH IN FAST-PACED TEAMS."</p>
-        <span class="ref-card__author">— ILLIA LUBENETS, CTO @ SPICYAI</span>
-      </div>
-      <div class="ref-card">
-        <p class="ref-card__quote">"I HAD THE OPPORTUNITY TO BE YANA'S MANAGER AT THE VERY BEGINNING OF HER ML CAREER. YANA IS A STRONG SPECIALIST WHO IS ABLE TO DIVE QUICKLY INTO NEW TOPICS AND IS NOT AFRAID TO LEARN AND PRACTICE NEW THINGS. THIS IS AN EXTREMELY VALUABLE SKILL IN A WORLD OF TECHNOLOGY THAT IS CHANGING AT THE SPEED OF LIGHT."</p>
-        <span class="ref-card__author">— TURAL GURBANOV, DIR. OF ENGINEERING @ SOUNDCLOUD (EX-CDO @ IVI)</span>
+    <div class="refs-group">
+      <span class="refs-label">[REFERENCES]</span>
+      <div class="refs-row">
+        <div class="ref-card">
+          <p class="ref-card__quote">"YANA IS A STRONG DATA SCIENCE ENGINEER WHO COMBINES SOLID TECHNICAL SKILLS WITH A PRACTICAL, PRODUCT-ORIENTED MINDSET. SHE DELIVERS RELIABLE RESULTS, COMMUNICATES CLEARLY, AND IS GREAT TO WORK WITH IN FAST-PACED TEAMS."</p>
+          <div class="ref-card__author-row">
+            <img src="media/icons/spicy_logo.png" alt="SpicyAI" class="ref-card__logo">
+            <span class="ref-card__author">— ILLIA LUBENETS, CTO @ SPICYAI</span>
+          </div>
+        </div>
+        <div class="ref-card">
+          <p class="ref-card__quote">"I HAD THE OPPORTUNITY TO BE YANA'S MANAGER AT THE VERY BEGINNING OF HER ML CAREER. YANA IS A STRONG SPECIALIST WHO IS ABLE TO DIVE QUICKLY INTO NEW TOPICS AND IS NOT AFRAID TO LEARN AND PRACTICE NEW THINGS. THIS IS AN EXTREMELY VALUABLE SKILL IN A WORLD OF TECHNOLOGY THAT IS CHANGING AT THE SPEED OF LIGHT."</p>
+          <div class="ref-card__author-row">
+            <img src="media/icons/soundcloud_logo.png" alt="SoundCloud" class="ref-card__logo">
+            <span class="ref-card__author">— TURAL GURBANOV, DIR. OF ENGINEERING @ SOUNDCLOUD (EX-CDO @ IVI)</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
