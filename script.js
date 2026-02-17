@@ -1,0 +1,37 @@
+// Sticky nav background on scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('nav--scrolled', window.scrollY > 50);
+});
+
+// Smooth scroll for nav links (already handled by CSS scroll-behavior,
+// but this adds active state tracking)
+const navLinks = document.querySelectorAll('.nav__link');
+const sections = document.querySelectorAll('section[id], .nsfw-showcase');
+
+function updateActiveNav() {
+  const scrollY = window.scrollY + 120;
+  let current = '';
+  sections.forEach(section => {
+    if (section.offsetTop <= scrollY) {
+      current = section.id || '';
+    }
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('nav__link--active');
+    const href = link.getAttribute('href');
+    if (href === '#flux' && (current === 'flux' || current === 'anime' || current === 'lora')) {
+      link.classList.add('nav__link--active');
+    } else if (href === '#video' && current === 'video') {
+      link.classList.add('nav__link--active');
+    } else if (href === '#skills' && current === 'skills') {
+      link.classList.add('nav__link--active');
+    } else if (href === '#about' && current === 'about') {
+      link.classList.add('nav__link--active');
+    } else if (href === '#contact' && current === 'contact') {
+      link.classList.add('nav__link--active');
+    }
+  });
+}
+window.addEventListener('scroll', updateActiveNav);
+

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yana Makovskaya — Senior ML/AI Engineer</title>
+  <meta name="description" content="Portfolio of Yana Makovskaya — Senior ML/AI Engineer specializing in generative AI, image & video generation, computer vision, and MLOps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__left">
+    <div class="nav__dot"></div>
+    <span class="nav__name">YANA MAKOVSKAYA</span>
+  </div>
+  <div class="nav__center">
+    <a href="#flux" class="nav__link nav__link--active">TEXT-TO-IMAGE</a>
+    <a href="#video" class="nav__link">IMAGE-TO-VIDEO</a>
+    <a href="#skills" class="nav__link">SKILLS</a>
+    <a href="#about" class="nav__link">ABOUT</a>
+    <a href="#contact" class="nav__link">CONTACT</a>
+  </div>
+  <div>
+    <a href="#contact" class="nav__cta">[GET IN TOUCH]</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <p class="hero__quote">YOU LOOK LONELY.. I CAN FIX THAT</p>
+    <h1 class="hero__name">YANA MAKOVSKAYA</h1>
+    <p class="hero__title">SENIOR ML / AI ENGINEER</p>
+    <p class="hero__sub">GENERATIVE AI &nbsp;// &nbsp;IMAGE &amp; VIDEO GENERATION &nbsp;// &nbsp;COMPUTER VISION &nbsp;// &nbsp;MLOPS &nbsp;// &nbsp;TRAINING MODELS</p>
+    <div class="hero__stats">
+      <span class="hero__stat">[5 YRS EXP]</span>
+      <span class="hero__stat">[2M+ MEDIA PROCESSED]</span>
+      <span class="hero__stat">[90%+ ACCURACY]</span>
+    </div>
+  </section>
+
+  <!-- FLUX SHOWCASE -->
+  <section class="section" id="flux">
+    <div class="section__header">
+      <h2 class="section__title">[01] IMAGE GENERATION — FLUX + LORA</h2>
+      <p class="section__sub">TRAINED AND INFERNCED WITH CUSTOM LORA — CONSISTENT CHARACTER ACROSS SAME PHOTOSET AND DIFFERENT POSES</p>
+    </div>
+    <div class="img-row">
+      <span class="img-row__label">CHARACTER A — FLUX + LORA</span>
+      <div class="img-row__images">
+        <img src="media/converted/flux_1/1.jpg" alt="Flux Character A - Pose 1" loading="lazy">
+        <img src="media/converted/flux_1/2.jpg" alt="Flux Character A - Pose 2" loading="lazy">
+        <img src="media/converted/flux_1/3.jpg" alt="Flux Character A - Pose 3" loading="lazy">
+        <img src="media/converted/flux_1/4.jpg" alt="Flux Character A - Pose 4" loading="lazy">
+      </div>
+    </div>
+    <div class="img-row">
+      <span class="img-row__label">CHARACTER B — FLUX + LORA</span>
+      <div class="img-row__images">
+        <img src="media/converted/flux_2/1.jpg" alt="Flux Character B - Pose 1" loading="lazy">
+        <img src="media/converted/flux_2/2.jpg" alt="Flux Character B - Pose 2" loading="lazy">
+        <img src="media/converted/flux_2/3.jpg" alt="Flux Character B - Pose 3" loading="lazy">
+        <img src="media/converted/flux_2/4.jpg" alt="Flux Character B - Pose 4" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- SDXL ANIME SHOWCASE -->
+  <section class="section" id="anime">
+    <div class="section__header">
+      <h2 class="section__title">[02] ANIME SDXL + DIALOGUE-TO-IMAGE PIPELINE</h2>
+      <p class="section__sub">CUSTOM SDXL ANIME FINE-TUNE, WORKING WITH LLM FOR PROMPT BUILDING FROM DIALOGUE</p>
+    </div>
+    <div class="chat">
+      <span class="chat__label">[DIALOGUE-TO-IMAGE DEMO]</span>
+      <div class="chat__msg">
+        <span class="chat__tag chat__tag--ai">AI</span>
+        <span class="chat__text chat__text--italic">what are you up to? want me to send you some pics?</span>
+      </div>
+      <div class="chat__msg">
+        <span class="chat__tag chat__tag--user">USER</span>
+        <span class="chat__text">yeah, send me pictures of you in the night city</span>
+      </div>
+      <div class="chat__msg">
+        <span class="chat__tag chat__tag--ai">AI</span>
+        <span class="chat__text chat__text--italic">sure, darling</span>
+      </div>
+      <div class="chat__pipeline">
+        <span class="chat__pipe-step">DIALOGUE</span>
+        <span class="chat__pipe-arrow">&gt;</span>
+        <span class="chat__pipe-step">LLM PROMPT BUILDER</span>
+        <span class="chat__pipe-arrow">&gt;</span>
+        <span class="chat__pipe-step">IMAGE GENERATION</span>
+        <span class="chat__pipe-arrow">&gt;</span>
+        <span class="chat__pipe-step chat__pipe-step--result">RESULT BELOW</span>
+      </div>
+    </div>
+    <div class="img-row__images img-row__images--pink">
+      <img src="media/converted/anime/1.jpg" alt="Anime generation 1" loading="lazy">
+      <img src="media/converted/anime/2.jpg" alt="Anime generation 2" loading="lazy">
+      <img src="media/converted/anime/3.jpg" alt="Anime generation 3" loading="lazy">
+      <img src="media/converted/anime/4.jpg" alt="Anime generation 4" loading="lazy">
+    </div>
+  </section>
+
+  <!-- LORA COMPARISON -->
+  <section class="section section--elevated" id="lora">
+    <div class="section__header">
+      <h2 class="section__title">[03] NSFW REALISM AND FACE CONSISTENCY WITH SDXL</h2>
+      <p class="section__sub">SDXL REALISM FINE-TUNE + CHARACTER LORA: ONE FACE, INFINITE SCENES</p>
+    </div>
+    <div class="nsfw-callout">
+      <svg class="nsfw-callout__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+      <p class="nsfw-callout__text">NSFW IS A CHALLENGE — CENSORED BASE MODELS, NO PUBLIC DATASETS, BUT I CAN MAKE IT WORK.</p>
+    </div>
+    <div class="lora-labels">
+      <span class="lora-labels__item lora-labels__item--without">WITHOUT LORA</span>
+      <span class="lora-labels__item lora-labels__item--with">WITH LORA</span>
+      <span class="lora-labels__item lora-labels__item--without">WITHOUT LORA</span>
+      <span class="lora-labels__item lora-labels__item--with">WITH LORA</span>
+    </div>
+    <div class="lora-row">
+      <img src="media/converted/sdxl/1_1.jpg" alt="Without LoRA 1" class="border-aqua" loading="lazy">
+      <img src="media/converted/sdxl/1_2.jpg" alt="With LoRA 1" class="border-pink" loading="lazy">
+      <img src="media/converted/sdxl/2_1.jpg" alt="Without LoRA 2" class="border-aqua" loading="lazy">
+      <img src="media/converted/sdxl/2_2.jpg" alt="With LoRA 2" class="border-pink" loading="lazy">
+    </div>
+    <div class="lora-row">
+      <img src="media/converted/sdxl/3_1.jpg" alt="Without LoRA 3" class="border-aqua" loading="lazy">
+      <img src="media/converted/sdxl/3_2.jpg" alt="With LoRA 3" class="border-pink" loading="lazy">
+      <div class="locked-card">
+        <img src="media/converted/nsfw_blurred/thumb_1.jpg" alt="" class="locked-card__bg">
+        <div class="locked-card__overlay"></div>
+        <svg class="locked-card__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        <span class="locked-card__text">CONTACT ME</span>
+      </div>
+      <div class="locked-card">
+        <img src="media/converted/nsfw_blurred/thumb_2.jpg" alt="" class="locked-card__bg">
+        <div class="locked-card__overlay"></div>
+        <svg class="locked-card__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        <span class="locked-card__text">FOR NSFW</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO GENERATION -->
+  <section class="section" id="video">
+    <div class="section__header">
+      <h2 class="section__title">[04] VIDEO GENERATION</h2>
+      <p class="section__sub">IMAGE-TO-VIDEO // WAN2.2 / HUNYUAN</p>
+    </div>
+    <div class="video-row">
+      <div class="video-card">
+        <video src="media/converted/videos/1.mp4" muted loop playsinline autoplay></video>
+      </div>
+      <div class="video-card">
+        <video src="media/converted/videos/2.mp4" muted loop playsinline autoplay></video>
+      </div>
+      <div class="video-card">
+        <video src="media/converted/videos/3.mp4" muted loop playsinline autoplay></video>
+      </div>
+      <div class="video-card">
+        <video src="media/converted/videos/4.mp4" muted loop playsinline autoplay></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- NSFW SHOWCASE -->
+  <section class="nsfw-showcase">
+    <div class="nsfw-showcase__bg">
+      <video src="media/converted/nsfw_blurred/nsfw_vid_1.mp4" muted loop playsinline autoplay></video>
+      <video src="media/converted/nsfw_blurred/nsfw_vid_2.mp4" muted loop playsinline autoplay></video>
+      <video src="media/converted/nsfw_blurred/nsfw_vid_3.mp4" muted loop playsinline autoplay></video>
+      <video src="media/converted/nsfw_blurred/nsfw_vid_4.mp4" muted loop playsinline autoplay></video>
+    </div>
+    <div class="nsfw-showcase__overlay">
+      <h3 class="nsfw-showcase__title">NSFW GENERATIONS AVAILABLE UPON REQUEST</h3>
+      <a href="#contact" class="nsfw-showcase__btn">[CONTACT ME]</a>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section" id="skills">
+    <div class="section__header">
+      <h2 class="section__title">[05] MORE THAN JUST GENAI</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <svg class="skill-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+        <span class="skill-card__title">COMPUTER VISION</span>
+        <span class="skill-card__list">&bull; 80-CLASS MEDIA TAGGER
+&bull; CAPTIONING &amp; PRICING
+&bull; VIDEO PREVIEWS
+&bull; 2M+ MEDIA / 90%+ ACC
+&bull; BUILT FROM SCRATCH</span>
+      </div>
+      <div class="skill-card">
+        <svg class="skill-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
+        <span class="skill-card__title">LLM FINE-TUNING</span>
+        <span class="skill-card__list">&bull; 70B LLAMA CHATBOT
+&bull; CHATS WITH FANS
+&bull; SELLS CONTENT
+&bull; GPU MEMORY OPTIMIZATION
+&bull; COST-BENEFIT ANALYSIS</span>
+      </div>
+      <div class="skill-card">
+        <svg class="skill-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+        <span class="skill-card__title">INFRASTRUCTURE &amp; MLOPS</span>
+        <span class="skill-card__list">&bull; API &amp; MESSAGE QUEUES
+&bull; CONTAINERIZATION
+&bull; GPU DEPLOYMENT
+&bull; MODEL MONITORING</span>
+      </div>
+      <div class="skill-card">
+        <svg class="skill-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+        <span class="skill-card__title">DATA LABELING</span>
+        <span class="skill-card__list">&bull; 7-PERSON TEAM MANAGED
+&bull; CUSTOM INSTRUCTIONS
+&bull; CROSS-LABEL PROCESSING
+&bull; CONSISTENCY MEASUREMENT
+&bull; LABEL STUDIO</span>
+      </div>
+      <div class="skill-card">
+        <svg class="skill-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        <span class="skill-card__title">ML FOR BUSINESS</span>
+        <span class="skill-card__list">&bull; RECOMMENDATION SYSTEMS
+&bull; CHURN PREDICTION
+&bull; SOCDEM PREDICTION
+&bull; FOR 40M+ USERS DAILY</span>
+      </div>
+    </div>
+
+    <!-- TECH TAGS -->
+    <div class="tag-rows">
+      <div class="tag-row">
+        <span class="tag tag--pink">PYTHON</span>
+        <span class="tag tag--aqua">PYTORCH</span>
+        <span class="tag tag--lavender">HUGGING FACE</span>
+        <span class="tag tag--pink">COMFYUI</span>
+        <span class="tag tag--lavender">FLUX</span>
+        <span class="tag tag--aqua">SDXL</span>
+        <span class="tag tag--pink">WAN2.2</span>
+        <span class="tag tag--lavender">KOHYA_SS</span>
+        <span class="tag tag--aqua">FASTAPI</span>
+        <span class="tag tag--pink">LABEL STUDIO</span>
+        <span class="tag tag--aqua">UV</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag tag--lavender">DOCKER</span>
+        <span class="tag tag--pink">AWS SQS/S3</span>
+        <span class="tag tag--aqua">LLAMA</span>
+        <span class="tag tag--lavender">MONGODB</span>
+        <span class="tag tag--pink">CLICKHOUSE</span>
+        <span class="tag tag--lavender">RUNPOD</span>
+        <span class="tag tag--aqua">PANDAS</span>
+        <span class="tag tag--pink">CATBOOST</span>
+        <span class="tag tag--lavender">WANDB</span>
+        <span class="tag tag--aqua">SCIKIT-LEARN</span>
+        <span class="tag tag--pink">POETRY</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag tag--pink">GRAFANA</span>
+        <span class="tag tag--aqua">CI/CD</span>
+        <span class="tag tag--lavender">DIFFUSION MODELS</span>
+        <span class="tag tag--pink">LORA TRAINING</span>
+        <span class="tag tag--aqua">DEEP LEARNING</span>
+        <span class="tag tag--lavender">COMPUTER VISION</span>
+        <span class="tag tag--pink">PROMPT ENGINEERING</span>
+        <span class="tag tag--aqua">FFMPEG</span>
+        <span class="tag tag--lavender">OPENCV</span>
+      </div>
+    </div>
+
+    <!-- DEPLOYED BANNER -->
+    <div class="deployed-banner">
+      <span class="deployed-banner__label">[DEPLOYED]</span>
+      <p class="deployed-banner__text">ALL MODELS USED ARE SELF-HOSTED AND OPEN-SOURCE — NO THIRD-PARTY API DEPENDENCIES.<br>ALL SYSTEMS ABOVE ARE WRAPPED WITH FASTAPI / AWS SQS, CONTAINERIZED WITH DOCKER, AND RUNNING E2E IN PRODUCTION WITH FULL MLOPS PIPELINES.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section" id="about">
+    <div class="section__header">
+      <h2 class="section__title">[07] ABOUT ME</h2>
+      <p class="section__sub">ML ENGINEER WITH A PSYCHOLOGY DEGREE — BUILDING AI THAT UNDERSTANDS PEOPLE</p>
+    </div>
+    <div class="about-content">
+      <img src="media/converted/yana_cyberpunk_2.jpg" alt="Yana Makovskaya" class="about-photo">
+      <div class="bio-card">
+        <p class="bio-card__text">Hi! I'm Yana. As a kid, I spent days playing The Sims 2: creating characters, designing their homes, imagining life stories. I think this is why I am so drawn to AI companions — they create endless possibilities for your imagination.
+
+I earned my bachelor's in software engineering at top university, then I started working at a large-scale streaming platform as a Data Scientist mostly on business ML models and recommendation systems.
+
+In 2022 the war started and I couldn't accept it, so I decided to migrate. I joined SpicyAI as employee #3 and worked on AI adult-products — I truly cared about my projects.
+
+I also received additional psychology education as a hobby. This turned out to be a huge boost to my communication skills and understanding people.</p>
+        <p class="bio-card__tldr">TL;DR: GREW UP MAKING SIMS CHARACTERS, BECAME ML ENGINEER, NOW I MAKE AI ONES. I THRIVE IN FAST-MOVING ENVIRONMENTS, ALWAYS READY TO SOLVE REAL-LIFE PROBLEMS EFFECTIVELY. CHECK OUT MY RESUME TO FIND OUT MORE</p>
+      </div>
+    </div>
+    <span class="refs-label">[REFERENCES]</span>
+    <div class="refs-row">
+      <div class="ref-card">
+        <p class="ref-card__quote">"YANA IS A STRONG DATA SCIENCE ENGINEER WHO COMBINES SOLID TECHNICAL SKILLS WITH A PRACTICAL, PRODUCT-ORIENTED MINDSET. SHE DELIVERS RELIABLE RESULTS, COMMUNICATES CLEARLY, AND IS GREAT TO WORK WITH IN FAST-PACED TEAMS."</p>
+        <span class="ref-card__author">— ILLIA LUBENETS, CTO @ SPICYAI</span>
+      </div>
+      <div class="ref-card">
+        <p class="ref-card__quote">"I HAD THE OPPORTUNITY TO BE YANA'S MANAGER AT THE VERY BEGINNING OF HER ML CAREER. YANA IS A STRONG SPECIALIST WHO IS ABLE TO DIVE QUICKLY INTO NEW TOPICS AND IS NOT AFRAID TO LEARN AND PRACTICE NEW THINGS. THIS IS AN EXTREMELY VALUABLE SKILL IN A WORLD OF TECHNOLOGY THAT IS CHANGING AT THE SPEED OF LIGHT."</p>
+        <span class="ref-card__author">— TURAL GURBANOV, DIR. OF ENGINEERING @ SOUNDCLOUD (EX-CDO @ IVI)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="contact" id="contact">
+    <div class="contact__col">
+      <h2 class="contact__heading">[06] LET'S CREATE SOMETHING BEAUTIFUL</h2>
+      <div class="contact__links">
+        <a href="mailto:yan.makovskaya@gmail.com" class="contact__link">
+          <svg class="contact__link-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span class="contact__link-text">YAN.MAKOVSKAYA@GMAIL.COM</span>
+        </a>
+        <a href="https://linkedin.com/in/yanamkv" target="_blank" class="contact__link">
+          <svg class="contact__link-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          <span class="contact__link-text">LINKEDIN.COM/IN/YANAMKV</span>
+        </a>
+        <a href="https://t.me/yanamkv" target="_blank" class="contact__link">
+          <svg class="contact__link-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+          <span class="contact__link-text">T.ME/YANAMKV</span>
+        </a>
+      </div>
+      <p class="contact__avail">REMOTE (SERBIA) &nbsp;// &nbsp;READY TO RELOCATE &nbsp;// &nbsp;AVAILABLE IMMEDIATELY</p>
+      <div class="contact__buttons">
+        <a href="#" class="btn-resume">[VIEW RESUME]</a>
+        <a href="mailto:yan.makovskaya@gmail.com" class="btn-msg">[SEND MESSAGE]</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer__text">&copy; 2026 YANA MAKOVSKAYA</span>
+    <span class="footer__text">DESIGNED WITH <a href="https://pencil.dev" target="_blank">[PENCIL.DEV]</a></span>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
