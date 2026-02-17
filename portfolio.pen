@@ -3026,160 +3026,173 @@
               ]
             },
             {
-              "type": "text",
-              "id": "TjCG9",
-              "name": "refsLabel",
-              "fill": "$accent-aqua",
-              "content": "[REFERENCES]",
-              "fontFamily": "IBM Plex Mono",
-              "fontSize": 14,
-              "fontWeight": "bold",
-              "letterSpacing": 1
-            },
-            {
               "type": "frame",
-              "id": "l3F6v",
-              "name": "refsRow",
+              "id": "7mmSf",
+              "name": "refsGroup",
               "width": "fill_container",
+              "layout": "vertical",
               "gap": 16,
               "children": [
                 {
-                  "type": "frame",
-                  "id": "4ph5D",
-                  "name": "quote1",
-                  "width": "fill_container",
-                  "height": "fill_container",
-                  "fill": "$bg-card",
-                  "stroke": {
-                    "thickness": {
-                      "left": 4
-                    },
-                    "fill": "$accent-pink"
-                  },
-                  "layout": "vertical",
-                  "gap": 12,
-                  "padding": [
-                    24,
-                    32
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "oV7zV",
-                      "name": "q1text",
-                      "fill": "$text-primary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "\"YANA IS A STRONG DATA SCIENCE ENGINEER WHO COMBINES SOLID TECHNICAL SKILLS WITH A PRACTICAL, PRODUCT-ORIENTED MINDSET. SHE DELIVERS RELIABLE RESULTS, COMMUNICATES CLEARLY, AND IS GREAT TO WORK WITH IN FAST-PACED TEAMS.\"",
-                      "lineHeight": 1.8,
-                      "fontFamily": "IBM Plex Mono",
-                      "fontSize": 12,
-                      "fontWeight": "normal",
-                      "letterSpacing": 1,
-                      "fontStyle": "italic"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "tr7lh",
-                      "name": "q1authorRow",
-                      "gap": 10,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "HxmKt",
-                          "name": "spicyLogo",
-                          "width": 48,
-                          "height": 48,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "./media/icons/spicy_logo.png",
-                            "mode": "fill"
-                          },
-                          "cornerRadius": 4
-                        },
-                        {
-                          "type": "text",
-                          "id": "m4z5U",
-                          "name": "q1author",
-                          "fill": "$accent-lavender",
-                          "content": "— ILLIA LUBENETS, CTO @ SPICYAI",
-                          "fontFamily": "IBM Plex Mono",
-                          "fontSize": 11,
-                          "fontWeight": "bold",
-                          "letterSpacing": 1
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "text",
+                  "id": "TjCG9",
+                  "name": "refsLabel",
+                  "fill": "$accent-aqua",
+                  "content": "[REFERENCES]",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                  "letterSpacing": 1
                 },
                 {
                   "type": "frame",
-                  "id": "WVuQK",
-                  "name": "quote2",
+                  "id": "l3F6v",
+                  "name": "refsRow",
                   "width": "fill_container",
-                  "height": "fill_container",
-                  "fill": "$bg-card",
-                  "stroke": {
-                    "thickness": {
-                      "left": 4
-                    },
-                    "fill": "$accent-pink"
-                  },
-                  "layout": "vertical",
-                  "gap": 12,
-                  "padding": [
-                    24,
-                    32
-                  ],
+                  "height": 240,
+                  "gap": 16,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "gWFtz",
-                      "name": "q2text",
-                      "fill": "$text-primary",
-                      "textGrowth": "fixed-width",
+                      "type": "frame",
+                      "id": "4ph5D",
+                      "name": "quote1",
                       "width": "fill_container",
-                      "content": "\"I HAD THE OPPORTUNITY TO BE YANA'S MANAGER AT THE VERY BEGINNING OF HER ML CAREER. YANA IS A STRONG SPECIALIST WHO IS ABLE TO DIVE QUICKLY INTO NEW TOPICS AND IS NOT AFRAID TO LEARN AND PRACTICE NEW THINGS. THIS IS AN EXTREMELY VALUABLE SKILL IN A WORLD OF TECHNOLOGY THAT IS CHANGING AT THE SPEED OF LIGHT.\"",
-                      "lineHeight": 1.8,
-                      "fontFamily": "IBM Plex Mono",
-                      "fontSize": 12,
-                      "fontWeight": "normal",
-                      "letterSpacing": 1,
-                      "fontStyle": "italic"
+                      "height": "fill_container",
+                      "fill": "$bg-card",
+                      "stroke": {
+                        "thickness": {
+                          "left": 4
+                        },
+                        "fill": "$accent-pink"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        24,
+                        32
+                      ],
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oV7zV",
+                          "name": "q1text",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "\"YANA IS A STRONG DATA SCIENCE ENGINEER WHO COMBINES SOLID TECHNICAL SKILLS WITH A PRACTICAL, PRODUCT-ORIENTED MINDSET. SHE DELIVERS RELIABLE RESULTS, COMMUNICATES CLEARLY, AND IS GREAT TO WORK WITH IN FAST-PACED TEAMS.\"",
+                          "lineHeight": 1.8,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1,
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "tr7lh",
+                          "name": "q1authorRow",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "HxmKt",
+                              "name": "spicyLogo",
+                              "width": 48,
+                              "height": 48,
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "./media/icons/spicy_logo.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 4
+                            },
+                            {
+                              "type": "text",
+                              "id": "m4z5U",
+                              "name": "q1author",
+                              "fill": "$accent-lavender",
+                              "content": "— ILLIA LUBENETS, CTO @ SPICYAI",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 11,
+                              "fontWeight": "bold",
+                              "letterSpacing": 1
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
                       "type": "frame",
-                      "id": "60mWx",
-                      "name": "q2authorRow",
-                      "gap": 10,
-                      "alignItems": "center",
+                      "id": "WVuQK",
+                      "name": "quote2",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$bg-card",
+                      "stroke": {
+                        "thickness": {
+                          "left": 4
+                        },
+                        "fill": "$accent-pink"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        24,
+                        32
+                      ],
+                      "justifyContent": "space_between",
                       "children": [
                         {
-                          "type": "frame",
-                          "id": "tpJ0Y",
-                          "name": "soundcloudLogo",
-                          "width": 48,
-                          "height": 48,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "./media/icons/soundcloud_logo.png",
-                            "mode": "fill"
-                          },
-                          "cornerRadius": 4
+                          "type": "text",
+                          "id": "gWFtz",
+                          "name": "q2text",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "\"I HAD THE OPPORTUNITY TO BE YANA'S MANAGER AT THE VERY BEGINNING OF HER ML CAREER. YANA IS A STRONG SPECIALIST WHO IS ABLE TO DIVE QUICKLY INTO NEW TOPICS AND IS NOT AFRAID TO LEARN AND PRACTICE NEW THINGS. THIS IS AN EXTREMELY VALUABLE SKILL IN A WORLD OF TECHNOLOGY THAT IS CHANGING AT THE SPEED OF LIGHT.\"",
+                          "lineHeight": 1.8,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1,
+                          "fontStyle": "italic"
                         },
                         {
-                          "type": "text",
-                          "id": "5BEvY",
-                          "name": "q2author",
-                          "fill": "$accent-lavender",
-                          "content": "— TURAL GURBANOV, DIR. OF ENGINEERING @ SOUNDCLOUD (EX-CDO @ IVI)",
-                          "fontFamily": "IBM Plex Mono",
-                          "fontSize": 11,
-                          "fontWeight": "bold",
-                          "letterSpacing": 1
+                          "type": "frame",
+                          "id": "60mWx",
+                          "name": "q2authorRow",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "tpJ0Y",
+                              "name": "soundcloudLogo",
+                              "width": 48,
+                              "height": 48,
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "./media/icons/soundcloud_logo.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 4
+                            },
+                            {
+                              "type": "text",
+                              "id": "5BEvY",
+                              "name": "q2author",
+                              "fill": "$accent-lavender",
+                              "content": "— TURAL GURBANOV, DIR. OF ENGINEERING @ SOUNDCLOUD (EX-CDO @ IVI)",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 11,
+                              "fontWeight": "bold",
+                              "letterSpacing": 1
+                            }
+                          ]
                         }
                       ]
                     }
