@@ -764,6 +764,86 @@ ul { list-style: none; }
   color: var(--accent-lavender);
 }
 
+/* ========== HAMBURGER BUTTON (hidden on desktop) ========== */
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.nav__hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text-primary);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.nav__hamburger--open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav__hamburger--open span:nth-child(2) {
+  opacity: 0;
+}
+.nav__hamburger--open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ========== MOBILE MENU OVERLAY ========== */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: #0D0B1AF5;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  align-items: center;
+  justify-content: center;
+}
+.mobile-menu--open {
+  display: flex;
+}
+.mobile-menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.mobile-menu__link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.mobile-menu__link:hover {
+  color: var(--text-primary);
+}
+.mobile-menu__cta {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--text-on-accent);
+  background: var(--accent-lavender);
+  padding: 14px 32px;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1200px) {
   .nav { padding: 0 30px; }
@@ -779,6 +859,8 @@ ul { list-style: none; }
 
 @media (max-width: 900px) {
   .nav__center { display: none; }
+  .nav__cta { display: none; }
+  .nav__hamburger { display: flex; }
   .hero__name { font-size: 36px; }
   .hero__title { font-size: 20px; }
   .hero__stats { flex-wrap: wrap; }
@@ -798,4 +880,247 @@ ul { list-style: none; }
   .nsfw-showcase__bg,
   .nsfw-showcase__overlay { left: 20px; right: 20px; }
   .contact__links { flex-direction: column; align-items: flex-start; }
+}
+
+/* ========== MOBILE (<480px) ========== */
+@media (max-width: 480px) {
+  /* --- Nav --- */
+  .nav {
+    padding: 0 16px;
+    height: 60px;
+  }
+  .nav__name {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  /* --- Hero --- */
+  .hero {
+    height: 600px;
+    padding: 0 20px 40px !important;
+    background:
+      linear-gradient(to top, #0D0B1A 15%, #0D0B1AE6 45%, #0D0B1A99 70%, #0D0B1A66 100%),
+      url('media/website-background/hero_bg.png') center/cover no-repeat,
+      var(--bg-page);
+  }
+  .hero__quote {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 8px #0D0B1A;
+  }
+  .hero__name {
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 12px #0D0B1A;
+  }
+  .hero__title {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-shadow: 0 1px 8px #0D0B1A;
+  }
+  .hero__sub {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 6px #0D0B1A;
+  }
+  .hero__stats {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .hero__stat {
+    font-size: 10px;
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+  /* --- Sections general --- */
+  .section {
+    padding: 40px 20px;
+    gap: 24px;
+  }
+  .section__title {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .section__sub {
+    font-size: 10px;
+  }
+
+  /* --- Image grids: 2 per row, keep vertical --- */
+  .img-row__images {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .img-row__images img {
+    flex: 1 1 calc(50% - 4px);
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+  .img-row__label {
+    display: none;
+  }
+
+  /* --- Chat mockup --- */
+  .chat {
+    padding: 16px;
+  }
+  .chat__text {
+    font-size: 12px;
+  }
+  .chat__pipeline {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .chat__pipe-step {
+    font-size: 9px;
+  }
+  .chat__pipe-arrow {
+    font-size: 9px;
+  }
+
+  /* --- LoRA comparison: 2 per row, keep vertical --- */
+  .lora-labels {
+    display: none;
+  }
+  .lora-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .lora-row img,
+  .locked-card {
+    flex: 1 1 calc(50% - 4px);
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+  .nsfw-callout__text {
+    font-size: 11px;
+  }
+
+  /* --- Video section: 2 per row --- */
+  .video-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .video-card {
+    flex: 1 1 calc(50% - 4px);
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  /* --- NSFW showcase --- */
+  .nsfw-showcase {
+    height: 400px;
+  }
+  .nsfw-showcase__bg {
+    top: 20px;
+    left: 16px;
+    right: 16px;
+    height: 360px;
+  }
+  .nsfw-showcase__overlay {
+    top: 20px;
+    left: 16px;
+    right: 16px;
+    height: 360px;
+    padding: 20px;
+  }
+  .nsfw-showcase__title {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+
+  /* --- Skills --- */
+  .skill-card {
+    padding: 16px;
+  }
+  .skill-card__title {
+    font-size: 12px;
+  }
+  .skill-card__list {
+    font-size: 10px;
+  }
+
+  /* --- Tech tags --- */
+  .tag {
+    font-size: 10px;
+    padding: 6px 10px;
+    letter-spacing: 1px;
+  }
+
+  /* --- Deployed banner --- */
+  .deployed-banner {
+    padding: 20px;
+  }
+  .deployed-banner__text {
+    font-size: 11px;
+  }
+
+  /* --- About --- */
+  .about-photo {
+    height: 240px;
+  }
+  .bio-card {
+    padding: 16px;
+  }
+  .bio-card__text {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+  .bio-card__tldr {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+  .refs-label {
+    font-size: 18px;
+  }
+  .ref-card {
+    height: auto;
+    padding: 16px 20px;
+  }
+  .ref-card__quote {
+    font-size: 11px;
+  }
+  .ref-card__author {
+    font-size: 10px;
+  }
+  .ref-card__logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* --- Contact --- */
+  .contact {
+    padding: 40px 20px;
+  }
+  .contact__heading {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  .contact__link-text {
+    font-size: 11px;
+  }
+  .contact__avail {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  .contact__buttons {
+    flex-direction: column;
+  }
+  .btn-resume,
+  .btn-msg {
+    text-align: center;
+    padding: 14px 24px;
+  }
+
+  /* --- Footer --- */
+  .footer {
+    height: auto;
+    padding: 20px 16px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
 }

@@ -16,19 +16,32 @@
 <nav class="nav" id="nav">
   <div class="nav__left">
     <div class="nav__dot"></div>
-    <span class="nav__name">YANA MAKOVSKAYA</span>
+    <a href="#hero" class="nav__name">YANA MAKOVSKAYA</a>
   </div>
   <div class="nav__center">
     <a href="#flux" class="nav__link nav__link--active">TEXT-TO-IMAGE</a>
     <a href="#video" class="nav__link">IMAGE-TO-VIDEO</a>
     <a href="#skills" class="nav__link">SKILLS</a>
     <a href="#about" class="nav__link">ABOUT</a>
-    <a href="#contact" class="nav__link">CONTACT</a>
   </div>
-  <div>
+  <div class="nav__right">
     <a href="#contact" class="nav__cta">[GET IN TOUCH]</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__links">
+    <a href="#flux" class="mobile-menu__link">TEXT-TO-IMAGE</a>
+    <a href="#video" class="mobile-menu__link">IMAGE-TO-VIDEO</a>
+    <a href="#skills" class="mobile-menu__link">SKILLS</a>
+    <a href="#about" class="mobile-menu__link">ABOUT</a>
+    <a href="#contact" class="mobile-menu__cta">[GET IN TOUCH]</a>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="hero" id="hero">
