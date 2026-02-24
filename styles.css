@@ -536,6 +536,54 @@ ul { list-style: none; }
   border: 1px solid var(--accent-lavender);
 }
 
+/* --- Demo Embed --- */
+.demo-embed {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.demo-embed__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.demo-embed__tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--accent-lavender);
+  border: 1px solid var(--accent-lavender);
+  padding: 4px 10px;
+  text-transform: uppercase;
+}
+.demo-embed__frame {
+  width: 100%;
+  border: 1px solid var(--accent-lavender);
+  background: var(--bg-elevated);
+  border-radius: 2px;
+}
+.demo-embed__links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.demo-embed__link {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--accent-aqua);
+  text-decoration: none;
+  border: 1px solid var(--accent-aqua);
+  padding: 8px 16px;
+  transition: background 0.2s, color 0.2s;
+}
+.demo-embed__link:hover {
+  background: var(--accent-aqua);
+  color: var(--bg);
+}
+
 /* ========== DEPLOYED BANNER ========== */
 .deployed-banner {
   background: var(--bg-elevated);
