@@ -3373,7 +3373,7 @@
                   "id": "lrlUR",
                   "name": "ctaAvail",
                   "fill": "$accent-lavender",
-                  "content": "REMOTE (SERBIA)  //  READY TO RELOCATE  //  AVAILABLE IMMEDIATELY",
+                  "content": "REMOTE (SERBIA)  //  READY TO RELOCATE",
                   "fontFamily": "IBM Plex Mono",
                   "fontSize": 13,
                   "fontWeight": "bold",
